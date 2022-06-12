@@ -44,7 +44,7 @@
             this.bCarp = new System.Windows.Forms.Button();
             this.b0 = new System.Windows.Forms.Button();
             this.bBol = new System.Windows.Forms.Button();
-            this.s5 = new System.Windows.Forms.Button();
+            this.sEsit = new System.Windows.Forms.Button();
             this.bSil = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -74,6 +74,7 @@
             this.b1.TabIndex = 2;
             this.b1.Text = "1";
             this.b1.UseVisualStyleBackColor = true;
+            this.b1.Click += new System.EventHandler(this.b1_Click);
             // 
             // b2
             // 
@@ -84,6 +85,7 @@
             this.b2.TabIndex = 3;
             this.b2.Text = "2";
             this.b2.UseVisualStyleBackColor = true;
+            this.b2.Click += new System.EventHandler(this.b2_Click);
             // 
             // b3
             // 
@@ -94,6 +96,7 @@
             this.b3.TabIndex = 4;
             this.b3.Text = "3";
             this.b3.UseVisualStyleBackColor = true;
+            this.b3.Click += new System.EventHandler(this.b3_Click);
             // 
             // bArti
             // 
@@ -104,6 +107,7 @@
             this.bArti.TabIndex = 5;
             this.bArti.Text = "+";
             this.bArti.UseVisualStyleBackColor = true;
+            this.bArti.Click += new System.EventHandler(this.bArti_Click);
             // 
             // b4
             // 
@@ -114,6 +118,7 @@
             this.b4.TabIndex = 6;
             this.b4.Text = "4";
             this.b4.UseVisualStyleBackColor = true;
+            this.b4.Click += new System.EventHandler(this.b4_Click);
             // 
             // b5
             // 
@@ -124,6 +129,7 @@
             this.b5.TabIndex = 7;
             this.b5.Text = "5";
             this.b5.UseVisualStyleBackColor = true;
+            this.b5.Click += new System.EventHandler(this.b5_Click);
             // 
             // b6
             // 
@@ -134,6 +140,7 @@
             this.b6.TabIndex = 8;
             this.b6.Text = "6";
             this.b6.UseVisualStyleBackColor = true;
+            this.b6.Click += new System.EventHandler(this.b6_Click);
             // 
             // bEksi
             // 
@@ -144,6 +151,7 @@
             this.bEksi.TabIndex = 9;
             this.bEksi.Text = "-";
             this.bEksi.UseVisualStyleBackColor = true;
+            this.bEksi.Click += new System.EventHandler(this.bEksi_Click);
             // 
             // b7
             // 
@@ -154,6 +162,7 @@
             this.b7.TabIndex = 10;
             this.b7.Text = "7";
             this.b7.UseVisualStyleBackColor = true;
+            this.b7.Click += new System.EventHandler(this.b7_Click);
             // 
             // b8
             // 
@@ -164,6 +173,7 @@
             this.b8.TabIndex = 11;
             this.b8.Text = "8";
             this.b8.UseVisualStyleBackColor = true;
+            this.b8.Click += new System.EventHandler(this.b8_Click);
             // 
             // b9
             // 
@@ -174,6 +184,7 @@
             this.b9.TabIndex = 12;
             this.b9.Text = "9";
             this.b9.UseVisualStyleBackColor = true;
+            this.b9.Click += new System.EventHandler(this.b9_Click);
             // 
             // bCarp
             // 
@@ -184,6 +195,7 @@
             this.bCarp.TabIndex = 13;
             this.bCarp.Text = "x";
             this.bCarp.UseVisualStyleBackColor = true;
+            this.bCarp.Click += new System.EventHandler(this.bCarp_Click);
             // 
             // b0
             // 
@@ -194,6 +206,7 @@
             this.b0.TabIndex = 14;
             this.b0.Text = "0";
             this.b0.UseVisualStyleBackColor = true;
+            this.b0.Click += new System.EventHandler(this.b0_Click);
             // 
             // bBol
             // 
@@ -204,17 +217,18 @@
             this.bBol.TabIndex = 15;
             this.bBol.Text = "/";
             this.bBol.UseVisualStyleBackColor = true;
-            this.bBol.Click += new System.EventHandler(this.button12_Click);
+            this.bBol.Click += new System.EventHandler(this.bBol_Click);
             // 
-            // s5
+            // sEsit
             // 
-            this.s5.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.s5.Location = new System.Drawing.Point(149, 328);
-            this.s5.Name = "s5";
-            this.s5.Size = new System.Drawing.Size(61, 55);
-            this.s5.TabIndex = 16;
-            this.s5.Text = "1";
-            this.s5.UseVisualStyleBackColor = true;
+            this.sEsit.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.sEsit.Location = new System.Drawing.Point(149, 328);
+            this.sEsit.Name = "sEsit";
+            this.sEsit.Size = new System.Drawing.Size(61, 55);
+            this.sEsit.TabIndex = 16;
+            this.sEsit.Text = "=";
+            this.sEsit.UseVisualStyleBackColor = true;
+            this.sEsit.Click += new System.EventHandler(this.sEsit_Click);
             // 
             // bSil
             // 
@@ -225,6 +239,7 @@
             this.bSil.TabIndex = 17;
             this.bSil.Text = "C";
             this.bSil.UseVisualStyleBackColor = true;
+            this.bSil.Click += new System.EventHandler(this.bSil_Click);
             // 
             // Form1
             // 
@@ -232,7 +247,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(289, 401);
             this.Controls.Add(this.bSil);
-            this.Controls.Add(this.s5);
+            this.Controls.Add(this.sEsit);
             this.Controls.Add(this.bBol);
             this.Controls.Add(this.b0);
             this.Controls.Add(this.bCarp);
@@ -274,7 +289,7 @@
         private Button bCarp;
         private Button b0;
         private Button bBol;
-        private Button s5;
+        private Button sEsit;
         private Button bSil;
     }
 }
